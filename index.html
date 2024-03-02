@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petron-Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkblue: 'rgb(18, 19, 45)'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <header class="lg:container lg:mx-auto sm:container sm:mx-auto ">
+        <section>
+            <div class="navbar bg-base-100 mt-6 ">
+
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class=" lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] text-sm font-normalp-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="font-bold">Home</a></li>
+                            <li><a>Edit</a></li>
+                            <li><a>Add</a></li>
+                            <li><a>Region</a></li>
+                        </ul>
+                    </div>
+                    <a class=" font-extrabold text-4xl">Petron-<span class="text-violet-900  ">Forum</span></a>
+                </div>
+                <div class="navbar-end hidden lg:flex font-normal text-sm">
+                    <div class="flex gap-5 menu menu-horizontal px-1">
+                        <div class="dropdown dropdown-end">
+                        </div>
+                        <div class="tooltip " data-tip="Home ">
+                            <button class="btn btn-circle "><img src="./images/home.png" alt=""></button>
+                        </div>
+                        <div class="tooltip " data-tip="Edit">
+                            <button class="btn btn-circle  "><img class="" src="./images/edit.png" alt=""></button>
+                        </div>
+                        <div class="tooltip" data-tip="Add">
+                            <button class="btn btn-circle"><img src="./images/add.png" alt=""></button>
+                        </div>
+                        <div class="tooltip" data-tip="Region">
+                            <button class="btn btn-circle "><img src="./images/flag.png" alt=""></button>
+                        </div>
+                        <a class="btn rounded-full px-8 py-2 bg-indigo-500 text-white text-xl font-bold">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:container lg:mx-auto sm:container sm:mx-auto ">
+            <div class="h-[600px]  bg-darkblue rounded-3xl flex">
+                <div class="sunami flex">
+                    <div class="w-1/2 p-24  ">
+                        <h1 class="text-7xl  text-white font-bold  ">welcome to the Petron Forum</h1>
+                        <p class="text-3xl mt-10 text-white">Here you can get all all information and details .Get with us now   </p>
+                        <label class="input input-bordered flex items-center w-3/4 mt-10 gap-2 rounded-full">
+                            <input type="text" class="grow" placeholder="Search here anything" />
+                            <span class="btn rounded-full px-8 py-2 bg-indigo-500 text-white font-bold text-xl">Search</span>
+                          </label>
+                        
+                    </div>
+                    <div class=" p-28  text-white  text-2xl ">
+                        <div class="bg-white w-80 h-64  p-5 rounded-3xl">
+                            <div class="text-black flex gap-12">
+                                <h1>Registered Users</h1>
+                                <p>01</p>
+                            </div>
+                            <div class="text-black flex gap-[155px] mt-5">
+                                <h1>Forum</h1>
+                                <p>05</p>
+                            </div>
+                            <div class="text-black flex gap-40 mt-5">
+                                <h1>Topics</h1>
+                                <p>01</p>
+                            </div>
+                            <div class="text-black flex gap-[150px] mt-5">
+                                <h1>Replies</h1>
+                                <p>01</p>
+                            </div>
+                         
+                        </div>
+                        
+                    </div>
+                </div>
+                
+               
+
+
+            </div>
+        </section>
+
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/frist.js"></script>
+
 </body>
+
 </html>

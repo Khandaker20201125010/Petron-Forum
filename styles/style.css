@@ -1,0 +1,22 @@
+
+.mulish-uniquifier {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+.sunami {
+    background-image: url('../images/bgbanner.png');
+    background-position: top 100px left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200%; 
+  }
