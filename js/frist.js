@@ -9,11 +9,6 @@ const displayDetails = details => {
     const detailsContainer = document.getElementById('details-container');
     details.forEach((detail) => {
         const detailsCard = document.createElement('div');
-        if (detail.isActive) {
-            details.isActive = "Success";
-        } else{
-            details.IsActive = "Error";
-        }
         detailsCard.innerHTML = `<div class="flex  w-3/5 mt-10 max-sm:flex max-sm:flex-col shadow-lg ">
         
         <span  class="indicator-item badge ${details.isActive}" id="active"></span> 
@@ -49,6 +44,15 @@ const latestDetails = async () => {
     const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
     const data = await res.json();
     const latest = data.posts;
-    //console.log(details);
-    displayDetails(latest)
+    displayLatestDetails(latest)
 }
+const displayLatestDetails = latest => {
+    const detailsContainer = document.getElementById('details-container');
+    latest .forEach ((latests) => {
+        const detailsCard = document.createElement('div');
+        detailsCard.innerHTML
+
+    })
+
+}
+    
