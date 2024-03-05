@@ -22,9 +22,9 @@ const displayDetails = details => {
          </div>
         
         <div class="card-body ">
-            <div class="flex justify-normal gap-5">
+            <div class="flex justify-normal gap-5 font-bold">
                 <h1>${detail.category}</h1>
-                <h1>${detail.author.name}</h1>
+                <h1 >Author:${detail.author.name}</h1>
             </div>
             <h2 class="card-title">${detail.title}</h2>
             <p>${detail.description}</p>
@@ -102,14 +102,25 @@ const lastDetails = latest => {
         detailsContainer.appendChild(detailsCard)
     })
 }
-
+const handelSearch = () =>{
+    const searchBtn = document.getElementById('search-btn');
+    const searchText = searchBtn.value;
+    console.log(searchText);
+}   
 latestDetails();
 
-function updateCount() {
-
+function checkEvenOrOdd() {
+    const catDetails = document.getElementById($(detail.category));
+    const searchDocument = document.addEventListener('search-btn')
+    if (catdetails === searchDocument.value) {
+        latestDetails(catdetails)
+        
+    } else {
+        
+    }
 }
 
-// clickCount.addEventListener('click', updateCount());
+
 
 
 

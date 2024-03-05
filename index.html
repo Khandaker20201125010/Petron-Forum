@@ -80,9 +80,9 @@
                         <p class="text-xl w-2/3 mt-10 text-white">Here you can get all all information and details. Get
                             with us now . </p>
                         <label class="input input-bordered flex items-center w-3/4 mt-10 gap-2 rounded-full">
-                            <input type="text" class="grow" placeholder="Search here anything" />
+                            <input id="search-btn" type="text" class="grow" placeholder="Search here anything" />
                             <span
-                                class="btn rounded-full px-8 py-2 bg-indigo-500 text-white font-bold text-xl">Search</span>
+                             onclick="handelSearch"   class="btn rounded-full px-8 py-2 bg-indigo-500 text-white font-bold text-xl">Search</span>
                         </label>
                     </div>
                     <div class=" p-28  flex text-white  text-2xl  ">
@@ -117,34 +117,34 @@
                 <p class="mt-10 text-xl w-96 m-auto ">you can Discuss and see the everyone reviews details from here .
                 </p>
             </div>
-            <div class="flex justify-between">
-                <div id="details-container" class="flex flex-col mt-20 w-">
-                </div>
-                <div>
-                </div>
-                <div class="flex gap-8 max-sm:flex-col mb-24 mt-24">
-                    <div id="discuss-cards" class="w-full flex flex-col gap-6">
+            <div class="flex justify-between sm:flex-col">
+                <div class="flex max-sm:flex-col">
+                    <div id="details-container" class="flex flex-col mt-20 ">
                     </div>
-                    <div>
-                        <div id="click" class="w-[370px] max-sm:w-full bg-[#f3f3f4] p-6 rounded-2xl">
-                            <div class="flex justify-between pb-4">
-                                <h1 class="text-xl font-bold">Title</h1>
-                                <div id="count" class="flex gap-2">
-                                    <p>Mark as read (<span id="docCount" >0</span>)</p>
+                    <div class="flex gap-8 max-sm:flex-col mb-24 mt-24">
+                        <div>
+                            <div id="click" class="w-[370px] max-sm:w-full bg-[#f3f3f4] p-6 rounded-2xl">
+                                <div class="flex justify-between pb-4">
+                                    <h1 class="text-xl font-bold">Title</h1>
+                                    <div id="count" class="flex gap-2">
+                                        <p>Mark as read (<span id="docCount" >0</span>)</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
+                
             </div>
             </div>
             </div>
         </section>
         <section class="lg:container lg:mx-auto sm:container sm:mx-auto">
-            <div class=" bg-darkblue bg-cover rounded-3xl flex  mt-20 h-[450px] max-sm:flex max-sm:flex-col">
+            <div class=" bg-darkblue flex max-sm:flex-col items-center lg:pl-16 mt-20 max-sm:p-12 max-sm:gap-16 rounded-3xl mb-28">
                 <div class="flex max-sm:flex-col ">
                     <div class=" p-24 max-sm:p-10 ">
-                        <h1 class="text-4xl  text-white font-bold  ">Join Our Forum
+                        <h1 class="text-5xl  text-white font-bold  ">Join Our Forum
                         </h1>
                         <p class="text-xl  mt-10 text-white">Join us to experience the best and enjoy the improving
                             knowledge . </p>
@@ -152,7 +152,7 @@
                             Now</a>
                     </div>
                     <div class=" p-28  flex text-white  text-2xl  ">
-                        <div class="max-sm:w-full  rounded-3xl">
+                        <div class=" mt-16 max-sm:mt-2 max-sm:px-0 rounded-3xl">
                             <img src="./images/joinforum.png" alt="">
 
                         </div>
@@ -167,7 +167,7 @@
                 </div>
             </div>
             <div class="flex justify-evenly mt-10 max-sm:flex max-sm:flex-col">
-                <div id="ext" class="flex gap-10">
+                <div id="ext" class="flex gap-10 max-sm:flex-col max-sm:gap-8">
                 </div>
             </div>
 
