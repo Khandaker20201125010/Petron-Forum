@@ -47,7 +47,7 @@ const displayDetails = details => {
         const click = document.getElementById('click');
         const docCount = document.getElementById('docCount');
         const coVid = document.getElementById(detail.id);
-        console.log(count);
+        
         coVid.addEventListener('click', function () {
             count = count + 1;
             console.log(count);
@@ -63,10 +63,10 @@ const displayDetails = details => {
                         <h1 class="flex gap-2">${detail.view_count}</h1>
                     </div>
                 </div>`;
-                click.appendChild(docList);
+            click.appendChild(docList);
         });
-        
-  
+
+
     })
 }
 
@@ -102,25 +102,34 @@ const lastDetails = latest => {
         detailsContainer.appendChild(detailsCard)
     })
 }
-const handelSearch = () =>{
-    const searchBtn = document.getElementById('search-btn');
-    const searchText = searchBtn.value;
-    console.log(searchText);
-}   
-latestDetails();
-
-function checkEvenOrOdd() {
-    const catDetails = document.getElementById($(detail.category));
-    const searchDocument = document.addEventListener('search-btn')
-    if (catdetails === searchDocument.value) {
-        latestDetails(catdetails)
-        
-    } else {
-        
-    }
+function getSearch() {
+    fetch('https://openapi.programming-hero.com/api/retro-forum/posts')
+        .then(response => response.json())
+        .then(latest => getSearch2(latest))
 }
+function getSearch2(latest) { 
+  
+    const searchField = document.getElementById('search-impt');
+        const searchValue = searchField.value;
+        const vor =latest.posts;
+        console.log(vor);
+        for (late of vor){
+            console.log(late.category);
+        if (late.category === searchValue)
+            console.log('success')
+        else
+            console.log('failed')
+        }
+        
+}
+const clickBtn = document.getElementById('kilick');
+//clickBtn.addEventListener('click',getSearch());
+clickBtn.addEventListener('click',function(){
+    
+    
+    getSearch();
+    
+});
 
 
-
-
-
+latestDetails();
